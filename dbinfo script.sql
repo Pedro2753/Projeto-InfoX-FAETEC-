@@ -1,25 +1,27 @@
 create database dbinfo;
 use dbinfo;
+drop table tbusuarios;
 create table tbusuarios(
 iduser int primary key,
 usuario varchar(50) not null, 
 fone varchar(15),
 login varchar(15) not null unique,
-senha varchar(15) not null
+senha varchar(15) not null,
+perfil varchar(30) not null
 );
 -- o comando abaixo descreve a tabela 
 describe tbusuarios;
+select * from tbusuarios;
 -- a linha abaixo insere dados na tabela (CRUD)
 -- create
-insert into tbusuarios(iduser,usuario,fone,login,senha)
-values(1,'José de Assis','9999-9999','Joseassis','123456');
+insert into tbusuarios(iduser,usuario,fone,login,senha,perfil)
+values(1,'José de Assis','9999-9999','Joseassis','123456','administrador');
 
 select * from tbusuarios;
 
-insert into tbusuarios(iduser,usuario,fone,login,senha)
-values(2,'Administrador','9999-9999','admin','admin');
-insert into tbusuarios(iduser,usuario,fone,login,senha)
-values(3,'Bill Gates','9999-9999','bill','123456');
+insert into tbusuarios(iduser,usuario,fone,login,senha,perfil)
+values(2,'Administrador','9999-9999','admin','admin','administrador');
+
 
 -- A linha abaixo modifica dados na tabela (CRUD) 
 -- update -> update
