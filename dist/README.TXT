@@ -1,3 +1,9 @@
+É necessario a conexão com o banco de dados "dbinfo" para o correto funcionamento do software. Script do BD esta incluso nesta pasta.
+
+Login no Software:
+Usuario: admin	Senha: admin
+
+
 ========================
 BUILD OUTPUT DESCRIPTION
 ========================
